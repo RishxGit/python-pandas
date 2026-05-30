@@ -6,9 +6,8 @@ import pandas as pd
 
 
 # From List
-d
 
-ata_list = [100, 102, 104, 200, 202]
+data_list = [100, 102, 104, 200, 202]
 series_list = pd.Series(data_list, index=['a', 'b', 'c', 'd', 'e'])
 
 series_list.loc['c'] = 200                  
@@ -17,7 +16,6 @@ print(series_list.iloc[0])
 print(series_list[series_list >= 200])      
 
 # From Dictionary
-
 
 calories = {'day 1': 1750, 'day 2': 2100, 'day 3': 1700}
 series_dict = pd.Series(calories)
@@ -171,4 +169,6 @@ df_clean['Legendary'] = df_clean['Legendary'].astype(bool)
 df_clean = df_clean.drop_duplicates()
 
 print(df_clean.to_string())
+
+
 
